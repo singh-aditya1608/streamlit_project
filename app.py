@@ -46,4 +46,4 @@ with st.container():
         st.write("[github link >](https://github.com/singh-aditya1608)")
 
         with right_column:
-            st_lottie(lottie_coding,height= 300, key= "coding")
+            st_lottie(lottie_coding,height= 300)
