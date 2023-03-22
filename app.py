@@ -73,7 +73,7 @@ with st.container():
          st_lottie(lottie_art,height= 300, key="art")
 
 #--------- CONTACT ------
- with st.container():
+with st.container():
     st.write("---")
     st.header("Get in touch with me !")   
     st.write("##")
