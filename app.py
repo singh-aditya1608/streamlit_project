@@ -1,20 +1,17 @@
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 
 
-#------------Find the emoji's here https://www.webfx.com/tools/emoji-cheat-sheet/ ---------------
+#------------Find the emoji's here https://www.webfx.com/tools/emoji-cheat-sheet/ --------------
 st.set_page_config(page_title="My blog", page_icon=":tada:", layout="wide")
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 
+
+ 
 
 # ----------Loading Assests ----------
-lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json")
+#lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json")
 
 
 # ---------- Header Section ----------
@@ -44,5 +41,5 @@ with st.container():
          )
         st.write("[github link >](https://github.com/singh-aditya1608)")
 
-        with right_column:
-            st_lottie(lottie_coding,height= 300, key= "coding")
+       # with right_column:
+        #    st_lottie(lottie_coding,height= 300, key= "coding")
