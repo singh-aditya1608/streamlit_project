@@ -23,7 +23,7 @@ lottie_art = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_SCkAd
 
 # ---------- Header Section ----------
 with st.container():
-    st.subheader("I a am Aditya Prakash Singh. :wave:")
+    st.subheader("Hey :wave: This is Aditya Prakash Singh.")
     st.title("I am Techie by profession and a biker by heart")
     st.write("I have made this project for my personal use as well as to display some glimpse from the rides that I have already done.")
     st.write("[Here is the link to my blog] (https://singh-aditya1608.github.io/)")
