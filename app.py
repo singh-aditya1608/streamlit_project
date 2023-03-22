@@ -1,6 +1,20 @@
 import streamlit as st
+import requests
+from streamlit_lottie import st_lottie
 #------------Find the emoji's here https://www.webfx.com/tools/emoji-cheat-sheet/ ------------------
 st.set_page_config(page_title="My blog", page_icon=":tada:", layout="wide")
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+
+# ----------Loading Assests ----------
+lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json")
+
+
 # ---------- Header Section ----------
 with st.container():
     st.subheader("I am Aditya Prakash Singh. :wave:")
@@ -20,7 +34,7 @@ with st.container():
             This section has my professional details 
                - Currently I am working as a devops engineer with byjus for the last 2 years
                - I have worked on different services of aws 
-               - Right now I am also working on a streamline project which is based on python
+               - Right now I am also working on a streamlit project which is based on python
 
              If you want to follow this project or my work that I did please follow the link 
              """
@@ -28,4 +42,5 @@ with st.container():
          )
         st.write("[github link >](https://github.com/singh-aditya1608)")
 
-
+        with right_column:
+            st_lottie(lottie_coding,height= 300, key= "coding")
