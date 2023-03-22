@@ -16,6 +16,7 @@ def load_lottieurl(url):
 
 # ----------Loading Assests ----------
 lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json")
+#lottie_coding = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_2glqweqs.json")
 
 
 # ---------- Header Section ----------
