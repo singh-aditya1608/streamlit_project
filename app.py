@@ -1,7 +1,7 @@
 import json
 import requests
 import streamlit as st
-#from streamlit_lottie import st_lottie_spinner
+from streamlit_lottie import st_lottie_spinner
 
 
 #------------Find the emoji's here https://www.webfx.com/tools/emoji-cheat-sheet/ -----------------
