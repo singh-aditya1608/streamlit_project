@@ -18,6 +18,7 @@ def load_lottieurl(url: str):
 lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json")
 #lottie_coding = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_2glqweqs.json")
 lottie_code = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_htnujcuh.json")
+lottie_art = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_SCkAdr.json")
 
 
 # ---------- Header Section ----------
@@ -54,7 +55,7 @@ with st.container():
         st.write(
             """ 
             Swathi is also a techie by profession and by heart she is a traveller & artist.
-            
+
                 - Working as a full fledge data analyst in a start up 
                 - she is trained in bharatnatyam & mohiniattam
                 - Here are some glimpse of the artwork done.
@@ -68,7 +69,8 @@ with st.container():
 
     with right_column:
          st_lottie(lottie_coding,height= 300, key="coding")
-         st_lottie(lottie_code,height = 300, key="code")
+         st_lottie(lottie_code,height = 200, key="code")
+         st_lottie(lottie_art,height= 300, key="art")
 
 
     
