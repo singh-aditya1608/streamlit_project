@@ -17,6 +17,7 @@ def load_lottieurl(url: str):
 # ----------Loading Assests ----------
 lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json")
 #lottie_coding = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_2glqweqs.json")
+lottie_code = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_htnujcuh.json")
 
 
 # ---------- Header Section ----------
@@ -47,4 +48,5 @@ with st.container():
         st.write("[github link >](https://github.com/singh-aditya1608)")
 
     with right_column:
-         st_lottie(lottie_coding,height= 500, key="coding")
+         st_lottie(lottie_coding,height= 300, key="coding")
+         st_lottie(lottie_code,height = 300, key="code")
