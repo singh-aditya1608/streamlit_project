@@ -15,14 +15,17 @@ with st.container():
     with left_column:
         st.header("What I do")
         st.write("##")
-        st.write(" This section has my professional details "
-                 "  -   Currently I am working as a devops engineer with byjus for the last 2 years"
-                 "  -   I have worked on different services of aws "
-                 "  -   Right now I am also working on a streamline project which is based on python"
+        st.write(
+            """ 
+            This section has my professional details 
+               - Currently I am working as a devops engineer with byjus for the last 2 years
+               - I have worked on different services of aws 
+               - Right now I am also working on a streamline project which is based on python
 
-                 " If you want to follow this project or my work that I did please follow the link"
-                 
-                )
+             If you want to follow this project or my work that I did please follow the link 
+             """
+
+         )
         st.write("[github link >](https://github.com/singh-aditya1608)")
 
 
