@@ -72,6 +72,15 @@ with st.container():
          st_lottie(lottie_code,height = 200, key="code")
          st_lottie(lottie_art,height= 300, key="art")
 
+
+#--------- Use local CSS------
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("style/style.css")
+
+
 #--------- CONTACT ------
 with st.container():
     st.write("---")
