@@ -48,9 +48,28 @@ with st.container():
         st.write("[github link >](https://github.com/singh-aditya1608)")
 
         st.write("---")
+        # ------ About the art work done by my partner in crime ------
+        st.header("About the art work done by my partner in crime")
+        st.write("##")
+        st.write(
+            """ 
+            Swathi is also a techie by profession and by heart she is a traveller & artist.
+                - Working as a full fledge data analyst in a start up 
+                - she is trained in bharatnatyam & mohiniattam
+                - Here are some glimpse of the artwork done.
+                 
+            """
+                 )
+        st.write("[artwork >]("")")
+        
 
 
 
     with right_column:
          st_lottie(lottie_coding,height= 300, key="coding")
          st_lottie(lottie_code,height = 300, key="code")
+
+
+    
+     
+    
