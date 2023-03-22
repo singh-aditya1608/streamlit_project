@@ -1,13 +1,13 @@
 import json
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie_spinner
+from streamlit_lottie import st_lottie
 
 
 #------------Find the emoji's here https://www.webfx.com/tools/emoji-cheat-sheet/ -----------------
 st.set_page_config(page_title="My blog", page_icon=":tada:", layout="wide")
 
-def load_lottieurl(url):
+def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
         return None
@@ -46,5 +46,5 @@ with st.container():
          )
         st.write("[github link >](https://github.com/singh-aditya1608)")
 
-        with right_column:
-            st_lottie(lottie_coding,height= 300)
+    with right_column:
+         st_lottie(lottie_coding,height= 300, key="coding")
