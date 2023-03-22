@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 
 
-#------------Find the emoji's here https://www.webfx.com/tools/emoji-cheat-sheet/ ------------------
+#------------Find the emoji's here https://www.webfx.com/tools/emoji-cheat-sheet/ -----------------
 st.set_page_config(page_title="My blog", page_icon=":tada:", layout="wide")
 
 def load_lottieurl(url):
