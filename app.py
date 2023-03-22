@@ -23,7 +23,7 @@ lottie_code = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_htnu
 # ---------- Header Section ----------
 with st.container():
     st.subheader("I am Aditya Prakash Singh. :wave:")
-    st.title("Techie by profession and a biker by heart")
+    st.title("I am Techie by profession and a biker by heart")
     st.write("I have made this project for my personal use as well as to display some glimpse from the rides that I have already done.")
     st.write("[Here is the link to my blog] (https://singh-aditya1608.github.io/)")
 
@@ -46,6 +46,10 @@ with st.container():
 
          )
         st.write("[github link >](https://github.com/singh-aditya1608)")
+
+        st.write("---")
+
+
 
     with right_column:
          st_lottie(lottie_coding,height= 300, key="coding")
