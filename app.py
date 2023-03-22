@@ -72,7 +72,31 @@ with st.container():
          st_lottie(lottie_code,height = 200, key="code")
          st_lottie(lottie_art,height= 300, key="art")
 
+#--------- CONTACT ------
+ with st.container():
+    st.write("---")
+    st.header("Get in touch with me !")   
+    st.write("##")
 
-    
+# ----DOCUMENTATION https://formsubmit.co/-------
+
+    contact_form= """
+
+    <form action="https://formsubmit.co/singh.aditya1608@gmail.com" method="POST">
+    <input type = "hidden" name = "_captcha" value = "false" >
+     <input type="text" name="name" placeholder = "your name " required>
+     <input type="email" name="email" placeholder = "your email " required>
+     <textarea name = "message" placeholder = "your msg" required ></textarea>
+     <button type="submit">Send</button>
+</form>
+    """
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.markdown(contact_form, unsafe_allow_html=True)
+
+    with right_column:
+        st.empty()    
+
+
      
     
