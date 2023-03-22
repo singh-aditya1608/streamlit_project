@@ -22,7 +22,7 @@ lottie_code = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_htnu
 
 # ---------- Header Section ----------
 with st.container():
-    st.subheader("I am Aditya Prakash Singh. :wave:")
+    st.subheader("I a am Aditya Prakash Singh. :wave:")
     st.title("I am Techie by profession and a biker by heart")
     st.write("I have made this project for my personal use as well as to display some glimpse from the rides that I have already done.")
     st.write("[Here is the link to my blog] (https://singh-aditya1608.github.io/)")
@@ -54,12 +54,13 @@ with st.container():
         st.write(
             """ 
             Swathi is also a techie by profession and by heart she is a traveller & artist.
+            
                 - Working as a full fledge data analyst in a start up 
                 - she is trained in bharatnatyam & mohiniattam
                 - Here are some glimpse of the artwork done.
-                 
             """
-                 )
+            
+        )
         st.write("[artwork >]("")")
         
 
