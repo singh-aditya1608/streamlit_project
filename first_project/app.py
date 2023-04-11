@@ -1,4 +1,4 @@
-import json
+from PIL import Image
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -19,6 +19,7 @@ lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_w5
 #lottie_coding = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_2glqweqs.json")
 lottie_code = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_htnujcuh.json")
 lottie_art = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_SCkAdr.json")
+img= Image.open("images/rose.jpeg")
 
 
 # ---------- Header Section ----------
@@ -63,6 +64,12 @@ with st.container():
             
         )
         st.write("[artwork >]("")")
+# --images--
+with st.container():
+    image_coloumn, text_coloumn = st.columns((1,2))
+    with image_coloumn:
+        st.image(img)        
+
         
 
 
