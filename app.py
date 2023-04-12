@@ -22,7 +22,7 @@ lottie_code = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_htnu
 lottie_art = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_SCkAdr.json")
 
 
-img= Image.open("images/rose.jpeg")
+img= Image.open("images/rose.jpg")
 
 # ---------- Header Section ----------
 with st.container():
