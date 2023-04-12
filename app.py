@@ -81,7 +81,7 @@ with st.container():
     st.write("----")
     image_column = st.beta_columns(1)
     with image_column[0]:
-        st.image(img)
+        st.image(img,width= 300)
         
 
 #--------- Use local CSS------
