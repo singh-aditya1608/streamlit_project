@@ -1,3 +1,4 @@
+import numpy as np
 from PIL import Image
 import json
 import requests
@@ -23,7 +24,7 @@ lottie_art = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_SCkAd
 
 
 img= Image.open("images/rose.jpg")
-
+img_array = np.array(img)
 # ---------- Header Section ----------
 with st.container():
     st.subheader("Hey :wave: This is Aditya Prakash Singh.")
@@ -81,7 +82,8 @@ with st.container():
     st.write("----")
     image_coloumn = st.columns(1) 
     with image_coloumn:
-        st.image(img)
+      #  st.image(img)
+        st.image(img_array)
 
 #--------- Use local CSS------
 def local_css(file_name):
