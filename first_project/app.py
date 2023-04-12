@@ -19,6 +19,7 @@ lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_w5
 #lottie_coding = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_2glqweqs.json")
 lottie_code = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_htnujcuh.json")
 lottie_art = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_SCkAdr.json")
+
 img= Image.open("images/rose.jpeg")
 
 
@@ -72,7 +73,7 @@ with st.container():
          st_lottie(lottie_code,height = 200, key="code")
          st_lottie(lottie_art,height= 300, key="art")
 
-# --images--
+# --images--  img= Image.open("images/rose.jpeg")
 with st.container():
     st.write("----")
     image_coloumn = st.columns(1) 
