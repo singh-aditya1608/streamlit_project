@@ -1,4 +1,0 @@
-streamlit-lottie
-requests
-pillow
-Image
