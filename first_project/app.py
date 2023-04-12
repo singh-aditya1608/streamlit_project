@@ -64,21 +64,21 @@ with st.container():
             
         )
         st.write("[artwork >]("")")
-# --images--
-with st.container():
-    st.write("----")
-    image_coloumn, text_coloumn = st.columns((1,2))
-    with image_coloumn:
-        st.image(img)        
-
-        
-
+               
 
 
     with right_column:
          st_lottie(lottie_coding,height= 300, key="coding")
          st_lottie(lottie_code,height = 200, key="code")
          st_lottie(lottie_art,height= 300, key="art")
+
+# --images--
+with st.container():
+    st.write("----")
+    image_coloumn, text_coloumn = st.columns((1,2))
+    with image_coloumn:
+        st.image(img) 
+
 
 
 #--------- Use local CSS------
