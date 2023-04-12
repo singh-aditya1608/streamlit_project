@@ -75,7 +75,7 @@ with st.container():
 # --images--
 with st.container():
     st.write("----")
-    image_coloumn, text_coloumn = st.columns((1,2))
+    image_coloumn = st.columns(1) 
     with image_coloumn:
         st.image(img) 
 
