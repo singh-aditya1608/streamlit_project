@@ -1,0 +1,15 @@
+name: Asana
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  create-asana-attachment-job:
+    runs-on: ubuntu-latest
+    name: Link pull request
+    steps:
+      - name: Create pull request attachments
+        uses: Asana/create-app-attachment-github-action@latest
+        id: postAttachment
+        with:
+          asana-secret: ${{ secrets.ASANA_SECRET }}
